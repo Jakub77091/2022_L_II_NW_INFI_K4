@@ -12,8 +12,8 @@ jobs:
       - python/install-packages:
           pkg-manager: pip
       - run:
-          name: dupa
-          command: Write-Host 'Hello, Windows'
+          name: test
+          command: PYTHONPATH=. py.test
 workflows:
   sample: # This is the name of the workflow, feel free to change it to better match your workflow.
     jobs:
