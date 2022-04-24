@@ -12,8 +12,8 @@ jobs:
       - python/install-packages:
           pkg-manager: pip
       - run:
-          name: Run main.py
-          command: run __main__.py
+          name: dupa
+          command: Write-Host 'Hello, Windows'
 workflows:
   sample: # This is the name of the workflow, feel free to change it to better match your workflow.
     jobs:
